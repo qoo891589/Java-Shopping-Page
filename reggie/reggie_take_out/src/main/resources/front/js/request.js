@@ -1,20 +1,20 @@
 (function (win) {
   axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
-  // 创建axios实例
+  // 創建axios實例
   const service = axios.create({
-    // axios中请求配置有baseURL选项，表示请求URL公共部分
+    // axios中請求配置有baseURL選項，表示請求URL公共部分
     baseURL: '/',
-    // 超时
+    // 超時
     timeout: 10000
   })
-  // request拦截器
+  // request攔截器
   service.interceptors.request.use(config => {
-    // 是否需要设置 token
+    // 是否需要設置 token
     // const isToken = (config.headers || {}).isToken === false
     // if (getToken() && !isToken) {
-    //   config.headers['Authorization'] = 'Bearer ' + getToken() // 让每个请求携带自定义token 请根据实际情况自行修改
+    //   config.headers['Authorization'] = 'Bearer ' + getToken() // 讓每個請求攜帶自訂token 請根據實際情況自行修改
     // }
-    // get请求映射params参数
+    // get請求映射params參數
     if (config.method === 'get' && config.params) {
       let url = config.url + '?';
       for (const propName of Object.keys(config.params)) {
@@ -38,37 +38,38 @@
     }
     return config
   }, error => {
-      Promise.reject(error)
+    Promise.reject(error)
   })
 
-  // 响应拦截器
+  // 回應攔截器
   service.interceptors.response.use(res => {
-      console.log('---响应拦截器---',res)
-      if (res.data.code === 0 && res.data.msg === 'NOTLOGIN') {// 返回登录页面
-        window.top.location.href = '/front/page/login.html'
-      } else {
-        return res.data
+        console.log('---回應攔截器---',res)
+        if (res.data.code === 0 && res.data.msg === 'NOTLOGIN') {// 返回登錄頁面
+          window.top.location.href = '/front/page/login.html'
+        } else {
+          return res.data
+        }
+      },
+      error => {
+        let { message } = error;
+        if (message == "Network Error") {
+          message = "後端介面連接異常";
+        }
+        else if (message.includes("timeout")) {
+          message = "系統介面請求超時";
+        }
+        else if (message.includes("Request failed with status code")) {
+          message = "系統介面" + message.substr(message.length - 3) + "異常";
+        }
+        window.vant.Notify({
+          message: message,
+          type: 'warning',
+          duration: 5 * 1000
+        })
+        //window.top.location.href = '/front/page/no-wify.html'
+        return Promise.reject(error)
       }
-    },
-    error => {
-      let { message } = error;
-      if (message == "Network Error") {
-        message = "后端接口连接异常";
-      }
-      else if (message.includes("timeout")) {
-        message = "系统接口请求超时";
-      }
-      else if (message.includes("Request failed with status code")) {
-        message = "系统接口" + message.substr(message.length - 3) + "异常";
-      }
-      window.vant.Notify({
-        message: message,
-        type: 'warning',
-        duration: 5 * 1000
-      })
-      //window.top.location.href = '/front/page/no-wify.html'
-      return Promise.reject(error)
-    }
   )
-  win.$axios = service
+  win.$axios = service
 })(window);
+
