@@ -15,7 +15,7 @@ import java.sql.SQLIntegrityConstraintViolationException;
 @ControllerAdvice(annotations = {RestController.class, Controller.class})
 @ResponseBody
 @Slf4j
-public class GlobalExceptionHandler {
+public class    GlobalExceptionHandler {
     /**
      * 異常處理方法
      * @return
@@ -34,5 +34,16 @@ public class GlobalExceptionHandler {
             return R.error(msg);
         }
         return R.error("失敗了");
+    }
+
+    /**
+     * 異常處理方法
+     * @return
+     */
+    @ExceptionHandler(CustomException.class)
+    public R<String> exceptionHandler(CustomException ex) {
+        log.error(ex.getMessage());
+
+        return R.error(ex.getMessage());
     }
 }

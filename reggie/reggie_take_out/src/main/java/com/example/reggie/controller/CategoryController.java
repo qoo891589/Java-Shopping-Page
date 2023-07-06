@@ -52,5 +52,17 @@ public class CategoryController {
         return R.success("修改分類信息成功");
     }
 
-
+    /**
+     *
+     * @param category
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<Category>> list(Category category){
+        LambdaQueryWrapper<Category> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(category.getType() != null,Category::getType,category.getType());
+        queryWrapper.orderByAsc(Category::getSort).orderByDesc(Category::getUpdateTime);
+        List<Category> list = categoryService.list(queryWrapper);
+        return R.success(list);
+    }
 }

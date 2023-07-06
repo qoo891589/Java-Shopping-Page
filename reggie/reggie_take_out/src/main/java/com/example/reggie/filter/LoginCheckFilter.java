@@ -1,6 +1,7 @@
 package com.example.reggie.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.example.reggie.common.BaseContext;
 import com.example.reggie.common.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.AntPathMatcher;
@@ -34,7 +35,8 @@ public class LoginCheckFilter implements Filter {
                 "/employee/login",
                 "/employee/logout",
                 "/backend/**",
-                "/front/**"
+                "/front/**",
+                "/common/**"
         };
 
         // 2 判斷是否需要處理
@@ -50,6 +52,10 @@ public class LoginCheckFilter implements Filter {
         // 4 判斷是否登錄狀態 True : 放行
         if (request.getSession().getAttribute("employee") != null) {
             log.info("用戶已經登錄，用戶id為{}", request.getSession().getAttribute("employee"));
+
+            Long empId = (Long) request.getSession().getAttribute("employee");
+            BaseContext.setCurrentId(empId);
+
             filterChain.doFilter(request, response);
             return;
         }
