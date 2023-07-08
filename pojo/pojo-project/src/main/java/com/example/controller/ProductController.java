@@ -71,5 +71,4 @@ public class ProductController {
         return Result.success();
     }
 
-
 }
