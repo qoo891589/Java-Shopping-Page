@@ -1,0 +1,301 @@
+{
+    "code": "1",
+    "msg": "操作成功",
+    "result": {
+        "id": "1005000",
+        "name": "居家",
+        "picture": null,
+        "children": [
+            {
+                "id": "1005999003",
+                "name": "居家生活用品",
+                "picture": "http://yjy-xiaotuxian-dev.oss-cn-beijing.aliyuncs.com/picture/2021-04-22/7f6a7b20-7902-4b43-b9c5-f33151ef1334.jpg",
+                "parentId": null,
+                "parentName": null,
+                "goods": [
+                    {
+                        "id": "3463003",
+                        "name": "法國年份雅文邑700毫升",
+                        "desc": "經典產區限量單一老年份",
+                        "price": "1480.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/0a2fff6e0b55178fbbe99d97d94d20a8.png",
+                        "discount": null,
+                        "orderNum": 47
+                    },
+                    {
+                        "id": "3494006",
+                        "name": "梅乃宿梅酒720毫升",
+                        "desc": "小藏手工釀造，百年名酒",
+                        "price": "168.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/330913911087b44b0d817dd78233165f.png",
+                        "discount": null,
+                        "orderNum": 27
+                    },
+                    {
+                        "id": "1503001",
+                        "name": "全新升級，四川酸辣粉195克*6杯",
+                        "desc": "秘制醬包，配料豐富，爽彈滑口更巴適",
+                        "price": "69.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/54d1af8bc1e5e566b1455c8cbe3039aa.jpg",
+                        "discount": null,
+                        "orderNum": 1
+                    },
+                    {
+                        "id": "3388018",
+                        "name": "組合裝牛油300克+清油110克*2+番茄110克*2",
+                        "desc": "川渝火鍋魂，地道重慶味",
+                        "price": "32.80",
+                        "picture": "https://yanxuan-item.nosdn.127.net/e0c1ffa060d1fd8b81a720212d684945.png",
+                        "discount": null,
+                        "orderNum": 4
+                    },
+                    {
+                        "id": "1666009",
+                        "name": "多明尼加陳年朗姆酒700毫升",
+                        "desc": "陳年朗姆，香味芬芳",
+                        "price": "238.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/e3f387109491d92c47179d029d340b1f.jpg",
+                        "discount": null,
+                        "orderNum": 18
+                    }
+                ],
+                "categories": null,
+                "brands": null,
+                "saleProperties": null
+            },
+            {
+                "id": "1008017",
+                "name": "收納",
+                "picture": "https://yanxuan.nosdn.127.net/366989e4d730594e86fcd60b5ab19acc.png",
+                "parentId": null,
+                "parentName": null,
+                "goods": [
+                    {
+                        "id": "1108008",
+                        "name": "爆款明星好物，抽屜式透明儲物櫃",
+                        "desc": "抽屜隨意拉，東西隨意拿，7款尺寸，隨意疊加搭配",
+                        "price": "129.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/76a5304c9d7378a83e63554f3077d98b.png",
+                        "discount": null,
+                        "orderNum": 30
+                    }
+                ],
+                "categories": null,
+                "brands": null,
+                "saleProperties": null
+            },
+            {
+                "id": "1017000",
+                "name": "寵物食品",
+                "picture": "https://yanxuan.nosdn.127.net/b42a85ef15f856081ea9f49e5f6893e2.png",
+                "parentId": null,
+                "parentName": null,
+                "goods": [],
+                "categories": null,
+                "brands": null,
+                "saleProperties": null
+            },
+            {
+                "id": "109243003",
+                "name": "藝術藏品",
+                "picture": "https://yanxuan.nosdn.127.net/9544b81aaa14c26a8038c2365ff3c2bc.png",
+                "parentId": null,
+                "parentName": null,
+                "goods": [
+                    {
+                        "id": "4008506",
+                        "name": "平步青雲財神家居擺件",
+                        "desc": "藝術家瞿廣慈作品，手繪上色，禮盒包裝",
+                        "price": "646.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/9d5d0083264344b5d85acde13570d025.jpg",
+                        "discount": null,
+                        "orderNum": 60
+                    },
+                    {
+                        "id": "4001877",
+                        "name": "朱炳仁·銅忠義千秋關公風水擺件",
+                        "desc": "眾今禮敬關二爺，祈願慈恩常蔭庇",
+                        "price": "4280.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/cd9060820a1a52f296fa2502e56a5872.jpg",
+                        "discount": null,
+                        "orderNum": 19
+                    },
+                    {
+                        "id": "3990698",
+                        "name": "三重除臭，高效結團，混合貓砂2.5千克",
+                        "desc": "科學配比，四效合一",
+                        "price": "29.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/93b61911db2b55185aefd4b92bc52d26.png",
+                        "discount": null,
+                        "orderNum": 12
+                    },
+                    {
+                        "id": "3986658",
+                        "name": "快速吸水防回滲，寵物訓導墊S碼80片/袋",
+                        "desc": "漏斗般吸水，一墊多用更省心",
+                        "price": "35.80",
+                        "picture": "https://yanxuan-item.nosdn.127.net/17f5a18b4125733023cad09d6b7852db.jpg",
+                        "discount": null,
+                        "orderNum": 59
+                    },
+                    {
+                        "id": "4001920",
+                        "name": "朱炳仁銅·貓型吉祥物裝飾工藝擺件",
+                        "desc": "靈性十足的黑色招財貓，周而復始，財源不斷",
+                        "price": "1888.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/6e38fc94a8fe72c9d139bc48ba6d9814.jpg",
+                        "discount": null,
+                        "orderNum": 16
+                    }
+                ],
+                "categories": null,
+                "brands": null,
+                "saleProperties": null
+            },
+            {
+                "id": "109248004",
+                "name": "寵物用品",
+                "picture": "https://yanxuan.nosdn.127.net/e766b09029ca00680d1e651b5cdc42bd.png",
+                "parentId": null,
+                "parentName": null,
+                "goods": [
+                    {
+                        "id": "3990698",
+                        "name": "三重除臭，高效結團，混合貓砂2.5千克",
+                        "desc": "科學配比，四效合一",
+                        "price": "29.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/93b61911db2b55185aefd4b92bc52d26.png",
+                        "discount": null,
+                        "orderNum": 12
+                    },
+                    {
+                        "id": "3986658",
+                        "name": "快速吸水防回滲，寵物訓導墊S碼80片/袋",
+                        "desc": "漏斗般吸水，一墊多用更省心",
+                        "price": "35.80",
+                        "picture": "https://yanxuan-item.nosdn.127.net/17f5a18b4125733023cad09d6b7852db.jpg",
+                        "discount": null,
+                        "orderNum": 59
+                    },
+                    {
+                        "id": "1435025",
+                        "name": "還原貓咪排泄天性，進口膨潤土砂6千克",
+                        "desc": "進口礦砂，強力除臭凝結",
+                        "price": "59.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/4c271a733bb1461d39162c0d807b1b02.png",
+                        "discount": null,
+                        "orderNum": 27
+                    }
+                ],
+                "categories": null,
+                "brands": null,
+                "saleProperties": null
+            },
+            {
+                "id": "109293000",
+                "name": "家庭醫療",
+                "picture": "https://yanxuan.nosdn.127.net/3f34039fa8c26e18e2f4fc96ed8cb6de.png",
+                "parentId": null,
+                "parentName": null,
+                "goods": [
+                    {
+                        "id": "3997974",
+                        "name": "入門首選，語音播報電子血壓計",
+                        "desc": "全程語音指導，一鍵測量，監測心率，貼心守護爸媽健康",
+                        "price": "109.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/8f0c15f981c5cbcb1aa17215a259fa62.png",
+                        "discount": null,
+                        "orderNum": 17
+                    },
+                    {
+                        "id": "3997406",
+                        "name": "支撐頸椎無負擔，頸椎固定器",
+                        "desc": "0.23KG輕量化設計，支撐頸椎，低頭族救星",
+                        "price": "299.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/0cdfd546f8675669b87716114ad5900a.jpg",
+                        "discount": null,
+                        "orderNum": 26
+                    },
+                    {
+                        "id": "3995913",
+                        "name": "家庭常備紅外線耳溫式體溫計",
+                        "desc": "耳溫式體溫計測量更準確",
+                        "price": "139.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/cb09d868c280608a29c1d131dbc08061.jpg",
+                        "discount": null,
+                        "orderNum": 1
+                    },
+                    {
+                        "id": "3987635",
+                        "name": "語音播報，臂式測量血壓計",
+                        "desc": "臂式測量更準確，給爸媽的禮物",
+                        "price": "219.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/a153def14233781de524ba184389855c.jpg",
+                        "discount": null,
+                        "orderNum": 2
+                    },
+                    {
+                        "id": "3988985",
+                        "name": "醫用級緩鼻塞，可調式鼻腔清洗器",
+                        "desc": "醫用級洗鼻器，深度清潔疏通鼻腔",
+                        "price": "39.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/3cfb2027c8644fe4a29d4809f6a3ad7e.png",
+                        "discount": null,
+                        "orderNum": 6
+                    }
+                ],
+                "categories": null,
+                "brands": null,
+                "saleProperties": null
+            },
+            {
+                "id": "109308000",
+                "name": "中醫保健",
+                "picture": "https://yanxuan.nosdn.127.net/2bfba997fd031317caecc4f0bad17569.png",
+                "parentId": null,
+                "parentName": null,
+                "goods": [
+                    {
+                        "id": "3992367",
+                        "name": "七夕禮物·挺拔身姿，隱形內穿矯姿帶",
+                        "desc": "眾籌爆品回歸，專注矯姿20年，輕鬆矯正身姿",
+                        "price": "149.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/7d1bc78607a08c088b2a7cdbe88c05af.png",
+                        "discount": null,
+                        "orderNum": 29
+                    },
+                    {
+                        "id": "3993481",
+                        "name": "帶提手可站立炫彩矽膠熱水袋",
+                        "desc": "杯型式設計，輕鬆注水防燙傷",
+                        "price": "35.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/0b120e1c37f312981f4f2242997cc862.png",
+                        "discount": null,
+                        "orderNum": 22
+                    },
+                    {
+                        "id": "3986121",
+                        "name": "艾灸理療隨時隨地，灸療裝置8頭/12頭",
+                        "desc": "哪裡不適灸哪裡，全身都可灸",
+                        "price": "99.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/941abaee58a88cb104228fe2c4cfdeb1.png",
+                        "discount": null,
+                        "orderNum": 20
+                    },
+                    {
+                        "id": "3987204",
+                        "name": "真空拔罐器",
+                        "desc": "居家養生必備超簡便拔罐套裝",
+                        "price": "49.00",
+                        "picture": "https://yanxuan-item.nosdn.127.net/16222847be7d090eb538a944a7e0b01b.jpg",
+                        "discount": null,
+                        "orderNum": 53
+                    }
+                ],
+                "categories": null,
+                "brands": null,
+                "saleProperties": null
+            }
+        ]
+    }
+}
